@@ -1,0 +1,50 @@
+{
+  "type": "component",
+  "metadata": {
+    "name": "Star Rating",
+    "description": "A star rating component",
+    "icon": "StarIcon",
+    "categories": ["Form"]
+  },
+  "schema": {
+    "name": "star-rating",
+    "friendlyName": "Star Rating",
+    "description": "A star rating component",
+    "icon": "StarIcon",
+    "showSettingsBar": true,
+    "settings": [
+      {
+        "type": "dataProvider",
+        "label": "Data provider",
+        "key": "data",
+        "required": true
+      },
+      {
+        "type": "text",
+        "label": "Rating Field Name",
+        "key": "ratingField",
+        "defaultValue": "Rating"
+      },
+      {
+        "type": "text",
+        "label": "Full Star Symbol",
+        "key": "fullStar",
+        "defaultValue": "★"
+      },
+      {
+        "type": "text",
+        "label": "Empty Star Symbol",
+        "key": "emptyStar",
+        "defaultValue": "✩"
+      },
+      {
+        "type": "number",
+        "label": "Maximum Stars",
+        "key": "maxStars",
+        "defaultValue": 5,
+        "min": 1,
+        "max": 20
+      }
+    ]
+  }
+}
